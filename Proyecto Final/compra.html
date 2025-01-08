@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+  
+    <title>Resumen de Compra</title>
+</head>
+<body>
+    <header  class="encabezado">
+        <img src="./img/logo-1.jpeg" alt="Logo de la empresa"><h1>El rincon del gato lector</h1>
+        <nav>
+            <a href="index.html"><button>Libros</button></a>
+                <a href="tienda.html"><button>Tienda</button></a>
+                <a href="#Novedades"><button>Novedades</button></a>
+                <a href="./Contacto.html"><button>Contacto</button></a>
+                
+                <a href="compra.html"><button>Compra</button></a>
+        </nav>
+
+    </header>
+    <main>
+<h1>Gracias por su Compra</h1>
+        
+        <hr>
+        <section>
+            <div id="detalle"></div>
+        </section>
+
+    </main>
+  
+
+    <form id="formulario" action="https://formspree.io/f/xpwwjpye" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+        <input type="email" id="contactoEmail" name="email" placeholder="Ingresa tu correo" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        <br><br>
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+    </form>
+
+    
+    <div id="detalle"></div>
+    <hr>
+    <a href="tienda.html"><button>Volver</button></a>
+    <script src="js/compra.js"> </script>
+    
+</body>
+</html>
